@@ -1,0 +1,28 @@
+[user]
+	name = mitch
+	email = dev@mukungfu.com
+[core]
+	autocrlf = false
+	safecrlf = true
+	editor = code --wait
+	excludesfile = /Users/mitch/.gitignore
+	pager = less -F -X
+[color]
+	ui = true
+
+[alias]
+co = checkout
+ci = commit
+st = status
+br = branch
+hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+type = cat-file -t
+dump = cat-file -p
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[credential]
+	helper = osxkeychain
