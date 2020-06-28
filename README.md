@@ -1,4 +1,4 @@
-# Moderately modified from https://github.com/andrejewski/dotfiles.git
+# Moderately modified but mostly stolen from https://github.com/andrejewski/dotfiles.git
 
 # Dotfiles
 
