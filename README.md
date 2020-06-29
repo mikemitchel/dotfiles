@@ -44,3 +44,22 @@ Here are the steps (macOS):
 ## Contributing
 
 n/a at this point
+
+# VS Code
+1. List extensions on current mac, and print the command to install on new machine:
+
+▶ code --list-extensions | xargs -L 1 echo code --install-extension
+code --install-extension 2gua.rainbow-brackets
+code --install-extension chenxsan.vscode-standardjs
+code --install-extension dbaeumer.jshint
+code --install-extension DotJoshJohnson.xml
+code --install-extension eamodio.gitlens
+code --install-extension felixfbecker.php-debug
+code --install-extension file-icons.file-icons
+code --install-extension mrmlnc.vscode-apache
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension numso.prettier-standard-vscode
+code --install-extension oderwat.indent-rainbow
+code --install-extension redhat.vscode-xml
+code --install-extension streetsidesoftware.code-spell-checker
+
