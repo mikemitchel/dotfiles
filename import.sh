@@ -1,10 +1,9 @@
 
 # Dotfiles => Computer
 
-# bash
-cp ./.bashrc ~/.bashrc
-cp ./.bash_profile ~/.bash_profile
-source ~/.bashrc
+# zsh
+cp ./.zshrc ~/.zshrc
+source ~/.zshrc
 
 # git
 cp ./.gitconfig ~/.gitconfig

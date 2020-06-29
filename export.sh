@@ -1,9 +1,8 @@
 
 # Computer => Dotfiles
 
-# bash
+# zsh
 cp ~/.zshrc ./.zshrc
-# cp ~/.bash_profile ./.bash_profile
 
 # git
 cp ~/.gitconfig ./.gitconfig

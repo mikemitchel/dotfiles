@@ -1,6 +1,6 @@
 [user]
 	name = mitch
-	email = dev@mukungfu.com
+	email = mitch@mukungfu.com
 [core]
 	autocrlf = false
 	safecrlf = true

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/mitchel/.oh-my-zsh"
+export ZSH="/Users/mitch/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,6 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fix="standard --fix"
 
-export PATH=$PATH:/Users/mitchel/bin
+export PATH=$PATH:/Users/mitch/bin
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh

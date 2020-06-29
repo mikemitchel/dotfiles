@@ -28,11 +28,11 @@ brew_list=(
 
   git
   git-extras
-  ag
+  ag # command-line code search tool
   curl
   node
   yarn
-  watchman
+  # watchman - Watchman exists to watch files and record when they change. It can also trigger actions
 
   # postgres
   # mongodb
@@ -46,10 +46,10 @@ i 'Cask tools'
 
 cask_list=(
   firefox
-  github-desktop
   google-chrome
-  mamp
-  virtualbox
+  sequalpro
+  slack
+  virtualbox # installs system ext that needs permission update
   visual-studio-code
 )
 
