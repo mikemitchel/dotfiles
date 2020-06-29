@@ -48,7 +48,9 @@ n/a at this point
 # VS Code
 1. List extensions on current mac, and print the command to install on new machine:
 
-▶ code --list-extensions | xargs -L 1 echo code --install-extension
+code --list-extensions | xargs -L 1 echo code --install-extension
+
+....
 code --install-extension 2gua.rainbow-brackets
 code --install-extension chenxsan.vscode-standardjs
 code --install-extension dbaeumer.jshint
