@@ -4,7 +4,14 @@
 echo 'macOS fixes'
 bash mac-os-fixes.sh
 
+echo 'install mac apple store command line - mas'
+brew install mas
+
 alias i='echo Installing'
+
+i '1Password and Pixelmator'
+mas install 443987910  # 1Password - Password Manager and Secure Wallet
+mas install 407963104  # Pixelmator
 
 i 'Xcode'
 xcode-select --install
