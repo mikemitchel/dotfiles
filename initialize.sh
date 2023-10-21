@@ -9,8 +9,8 @@ brew install mas
 
 alias i='echo Installing'
 
-i '1Password and Pixelmator'
-mas install 443987910  # 1Password - Password Manager and Secure Wallet
+i 'Pixelmator'
+
 mas install 407963104  # Pixelmator
 
 i 'Xcode'
@@ -21,30 +21,17 @@ i 'Brew/Cask'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-
 i 'Brew tools'
 
 brew_list=(
-  bash-completion
+  ag # command-line code search tool
   coreutils
-
-  docker
-  docker-machine
-
+  curl
   git
   git-extras
-  ag # command-line code search tool
-  curl
   node
   yarn
-  # watchman - Watchman exists to watch files and record when they change. It can also trigger actions
-
-  # postgres
-  # mongodb
-  # redis
-  # nginx
+  zsh # for oh-my-zsh
 )
 
 brew install ${brew_list[@]}
@@ -52,15 +39,23 @@ brew install ${brew_list[@]}
 i 'Cask tools'
 
 cask_list=(
-  firefox
-  google-chrome
-  sequalpro
+  1password
+  audacity
+  balenaetcher
+  brave-browser
+  figma
+  iterm2
+  licecap
+  # mamp # for a2j dev only
+  postman
+  sequel-pro
+  signal
   slack
-  virtualbox # installs system ext that needs permission update
   visual-studio-code
+  zoom
 )
 
-brew cask install --appdir="/Applications" ${cask_list[@]}
+brew install --cask --appdir="/Applications" ${cask_list[@]}
 
 i 'Node tools'
 
@@ -73,6 +68,5 @@ npm install --global ${node_list[@]}
 
 echo Cleaning up
 brew cleanup
-brew cask cleanup
 
 unalias i

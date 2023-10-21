@@ -26,8 +26,8 @@ Here are the steps (macOS):
     cd Projects
     git clone https://github.com/mikemitchel/dotfiles.git
     cd dotfiles
-    bash initialize.sh
-    bash import.sh
+    zsh initialize.sh
+    zsh import.sh
     ```
 
 1. Sign into Firefox
@@ -38,8 +38,6 @@ Here are the steps (macOS):
     - [Download fonts](https://github.com/tonsky/FiraCode)
     - `Font Book > ⌘-O` and add all fonts from download.
     - Choose `Resolve automatically`
-
-1. Install Password manager
 
 ## Contributing
 
