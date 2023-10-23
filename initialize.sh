@@ -31,6 +31,7 @@ brew_list=(
   curl
   git
   git-extras
+  golang
   node
   yarn
   zsh # for oh-my-zsh
