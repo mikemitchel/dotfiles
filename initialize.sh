@@ -19,6 +19,8 @@ xcode-select --install
 i 'Brew/Cask'
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew tap homebrew/cask-versions
 brew update
 
 i 'Brew tools'
