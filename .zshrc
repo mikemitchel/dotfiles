@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+ZSH_DISABLE_COMPFIX=true
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -100,5 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fix="standard --fix"
+alias pbs="~/Projects/workstand-db/pb/pocketbase serve"
+alias python="python3"
+alias pip="pip3"
 
-export PATH=$PATH:/Users/mitch/bin
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
+# git-extras zsh completions
+source /opt/homebrew/opt/git-extras/share/git-extras/git-extras-completion.zsh
+
+# fnm update node version on entering directory
+eval "$(fnm env --use-on-cd --version-file-strategy recursive)"
