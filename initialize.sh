@@ -29,10 +29,18 @@ brew_list=(
   ag # command-line code search tool
   coreutils
   curl
+  fnm
+  ghostscript
   git
   git-extras
   go
+  http-server
   node
+  openssl
+  pocketbase
+  pyenv
+  python@3
+  python-tk
   yarn
   zsh # for oh-my-zsh
 )
@@ -46,12 +54,13 @@ cask_list=(
   audacity
   balenaetcher
   brave-browser
+  docker
   figma
   iterm2
   licecap
   # mamp # for a2j dev only
   postman
-  sequel-pro
+  sequel-ace
   signal
   slack
   visual-studio-code
@@ -60,14 +69,8 @@ cask_list=(
 
 brew install --cask --appdir="/Applications" ${cask_list[@]}
 
-i 'Node tools'
-
-node_list=(
-  nvm
-  http-server
-)
-
-npm install --global ${node_list[@]}
+i 'VSCode extensions'
+bash vscode-extensions.sh
 
 echo Cleaning up
 brew cleanup

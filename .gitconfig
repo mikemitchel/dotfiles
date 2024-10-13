@@ -1,6 +1,6 @@
 [user]
 	name = mitch
-	email = mitch@mukungfu.com
+	email = mitch@nomadiklabs.com
 [core]
 	autocrlf = false
 	safecrlf = true
@@ -11,6 +11,7 @@
 	ui = true
 
 [alias]
+	po = push -u origin HEAD
 	co = checkout
 	ci = commit
 	st = status
@@ -29,3 +30,7 @@
 [pull]
 	rebase = false
 	ff = only
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
