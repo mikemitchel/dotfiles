@@ -69,6 +69,9 @@ cask_list=(
 
 brew install --cask --appdir="/Applications" ${cask_list[@]}
 
+i 'VSCode extensions'
+bash vscode-extensions.sh
+
 echo Cleaning up
 brew cleanup
 
