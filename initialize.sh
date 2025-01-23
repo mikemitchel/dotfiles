@@ -43,7 +43,7 @@ brew_list=(
   ag # command-line code search tool
   coreutils
   curl
-  fnm
+  fnm # fast node manager
   ghostscript
   git
   git-extras
@@ -55,7 +55,6 @@ brew_list=(
   python@3
   python-tk
   yarn
-  zsh # for oh-my-zsh
 )
 
 brew install ${brew_list[@]}
@@ -65,7 +64,7 @@ i 'Cask tools'
 cask_list=(
   1password
   audacity
-  balenaetcher
+  balenaetcher # flash OS images to SD cards & USB drives
   brave-browser
   docker
   figma
