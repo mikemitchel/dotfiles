@@ -5,7 +5,7 @@
 	autocrlf = false
 	safecrlf = true
 	editor = code --wait
-	excludesfile = /Users/mitch/.gitignore
+	excludesfile = ~/.gitignore
 	pager = less -F -X
 [color]
 	ui = true
