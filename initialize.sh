@@ -13,14 +13,28 @@ i 'Pixelmator'
 
 mas install 407963104  # Pixelmator
 
+i 'Pages'
+mas install 409201541  # Pages
+
+i 'Keynote'
+mas install 409183694  # Keynote
+
+i 'Numbers'
+mas install 409203825  # Numbers
+
+i 'BetterSnapTool'
+mas install 417375580  # BetterSnapTool
+
 i 'Xcode'
 xcode-select --install
+
+i 'Oh My Zsh'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 i 'Brew/Cask'
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap homebrew/cask-versions
 brew update
 
 i 'Brew tools'
@@ -68,9 +82,6 @@ cask_list=(
 )
 
 brew install --cask --appdir="/Applications" ${cask_list[@]}
-
-i 'VSCode extensions'
-bash vscode-extensions.sh
 
 echo Cleaning up
 brew cleanup
