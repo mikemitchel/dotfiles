@@ -49,7 +49,6 @@ brew_list=(
   git-extras
   go
   http-server
-  node
   openssl
   pocketbase
   pyenv
@@ -72,16 +71,23 @@ cask_list=(
   figma
   iterm2
   licecap
-  # mamp # for a2j dev only
   postman
+  rustdesk
   sequel-ace
   signal
   slack
+  steam
   visual-studio-code
   zoom
 )
 
 brew install --cask --appdir="/Applications" ${cask_list[@]}
+
+i 'Install Rosetta2 for Steam'
+softwareupdate --install-rosetta --agree-to-license
+
+i 'Install LTS Node.js'
+fnm install --lts
 
 echo Cleaning up
 brew cleanup
